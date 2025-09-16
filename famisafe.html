@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO için Optimize Edilmiş Başlık -->
+    <title>FamiSafe Ebeveyn Kontrol Uygulaması | Ekran Süresi & Konum Takibi</title>
+    <!-- SEO için Meta Açıklaması ve Anahtar Kelimeler -->
+    <meta name="description" content="FamiSafe ile çocuklarınızın dijital güvenliğini sağlayın. Ekran süresi yönetimi, konum takibi, uygulama engelleme ve web filtresi gibi özelliklerle aileniz için en kapsamlı korumayı keşfedin. Ücretsiz deneyin!">
+    <meta name="keywords" content="ebeveyn kontrolü, famisafe, ekran süresi, konum takibi, çocuk güvenliği, web filtresi, uygulama engelleme, siber zorbalık">
+    <link rel="canonical" href="https://famisafe.wondershare.com/tr/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --famisafe-purple: #8A2BE2; /* Logodan gelen mor renk */
+            --famisafe-teal: #2dd4bf;   /* Logodan gelen turkuaz renk */
+            --famisafe-dark: #1A2150;
+            --famisafe-light: #F5F7FF;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(120deg, rgba(138, 43, 226, 0.9) 0%, rgba(45, 212, 191, 0.85) 100%), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(to right, var(--famisafe-purple), var(--famisafe-teal));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(to right, var(--famisafe-purple), var(--famisafe-teal));
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pricing-card {
+            transition: all 0.3s ease;
+            border: 2px solid #e5e7eb;
+        }
+        
+        .pricing-card.popular {
+            border: 2px solid var(--famisafe-purple);
+            box-shadow: 0 10px 25px -5px rgba(138, 43, 226, 0.2);
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15);
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, var(--famisafe-light) 0%, white 100%);
+        }
+        
+        .nav-scrolled {
+            background: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(to right, var(--famisafe-purple), var(--famisafe-teal));
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(138, 43, 226, 0.3);
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+        
+        .platform-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background: var(--famisafe-light);
+            color: var(--famisafe-purple);
+        }
+    </style>
+
+    <!-- SEO için Yapısal Veri (Schema Markup) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "FamiSafe Ebeveyn Kontrol Uygulaması",
+      "applicationCategory": "ParentalControl",
+      "operatingSystem": "Android, iOS, Windows, macOS, ChromeOS, Fire OS",
+      "description": "FamiSafe, ebeveynlerin çocuklarının dijital güvenliğini sağlamalarına yardımcı olan kapsamlı bir ebeveyn kontrol uygulamasıdır. Konum takibi, ekran süresi yönetimi, web filtresi ve daha fazlasını sunar.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "2000000"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "99",
+        "priceCurrency": "TRY",
+        "category": "Paid"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "FamiSafe nasıl çalışır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FamiSafe, ebeveynlerin cihazına ve çocuğun cihazına yüklenen iki uygulama ile çalışır. Ebeveyn uygulamasından çocuğunuzun cihaz aktivitelerini izleyebilir, sınırlamalar koyabilir ve tüm kontrolleri uzaktan yönetebilirsiniz."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "FamiSafe'i kurmak zor mu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır, FamiSafe'i kurmak oldukça kolaydır. App Store veya Google Play'den uygulamayı indirdikten sonra, adım adım kurulum sihirbazı sizi yönlendirecektir. Kurulum genellikle 5 dakikadan fazla sürmez."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Çocuğum uygulamayı silebilir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FamiSafe, çocukların uygulamayı devre dışı bırakmasını önlemek için çeşitli güvenlik önlemleri içerir. Uygulamanın kaldırılması için ebeveyn şifresi gerekir ve herhangi bir kaldırma denemesinde size anında bildirim gönderilir."
+          }
+        }
+      ]
+    }
+    </script>
+
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
+        <div class="container mx-auto px-4 md:px-6 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <div class="w-10 h-10 rounded-lg gradient-bg flex items-center justify-center text-white font-bold mr-2 text-lg">FS</div>
+                <span class="text-xl font-bold text-gray-800">FamiSafe</span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Özellikler</a>
+                <a href="#pricing" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Fiyatlandırma</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Yorumlar</a>
+                <a href="#faq" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">SSS</a>
+                <a href="https://wa.me/905512589444?text=Merhaba%2C%20FamiSafe%E2%80%99in%20kurumsal%20kullan%C4%B1m%C4%B1%20i%C3%A7in%20%C3%BCcretsiz%20deneme%20s%C3%BCr%C3%BCm%C3%BCn%C3%BC%20almak%20istiyorum." target="_blank" class="btn-primary text-white font-medium py-2 px-5 rounded-full">Ücretsiz Deneme</a>
+            </div>
+            
+            <button id="mobile-menu-button" class="md:hidden text-gray-700" aria-label="Mobil menüyü aç">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white mt-2">
+             <a href="#features" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Özellikler</a>
+             <a href="#pricing" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Fiyatlandırma</a>
+             <a href="#testimonials" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Yorumlar</a>
+             <a href="#faq" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">SSS</a>
+             <a href="https://famisafe.wondershare.com/tr/" target="_blank" class="block py-3 px-4 text-center btn-primary text-white font-medium">Ücretsiz Deneme</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg text-white pt-24">
+        <div class="container mx-auto px-4 md:px-6 py-24 md:py-32">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">Çocuklarınızın Dijital Güvenliği için En Akıllı Çözüm</h1>
+                <p class="text-xl md:text-2xl text-purple-100 mb-10">FamiSafe ile çocuklarınızı çevrimiçi tehlikelerden koruyun, ekran süresini yönetin ve dijital dünyada güvende kalmalarını sağlayın.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/905512589444?text=Merhaba%2C%20FamiSafe%E2%80%99in%20kurumsal%20kullan%C4%B1m%C4%B1%20i%C3%A7in%20%C3%BCcretsiz%20deneme%20s%C3%BCr%C3%BCm%C3%BCn%C3%BC%20almak%20istiyorum." 
+                    target="_blank" class="btn-primary text-white font-bold py-4 px-8 rounded-full text-lg text-center">Ücretsiz Denemeyi Başlat</a>
+                    <a href="#pricing" class="bg-white text-purple-600 font-bold py-4 px-8 rounded-full text-lg text-center hover:bg-gray-100 transition-colors">Fiyatlandırmayı Görüntüle</a>
+                </div>
+                
+                <div class="mt-16 flex flex-wrap items-center gap-6">
+                    <div class="flex items-center">
+                        <i class="fas fa-shield-alt text-teal-300 text-2xl mr-3"></i>
+                        <span class="text-purple-100">2 Milyon+ Mutlu Aile</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-star text-yellow-400 text-2xl mr-3"></i>
+                        <span class="text-purple-100">4.8/5 App Store ve Google Play</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-globe text-teal-300 text-2xl mr-3"></i>
+                        <span class="text-purple-100">190+ Ülkede Kullanılıyor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Platform Support -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex flex-wrap justify-center gap-8 md:gap-12 opacity-75">
+                <div class="flex items-center gap-3" title="Android Desteği">
+                    <i class="fab fa-android text-4xl text-gray-600"></i> <span class="text-gray-700 font-medium">Android</span>
+                </div>
+                <div class="flex items-center gap-3" title="iOS Desteği">
+                    <i class="fab fa-apple text-4xl text-gray-600"></i> <span class="text-gray-700 font-medium">iOS</span>
+                </div>
+                <div class="flex items-center gap-3" title="Windows Desteği">
+                    <i class="fab fa-windows text-4xl text-gray-600"></i> <span class="text-gray-700 font-medium">Windows</span>
+                </div>
+                 <div class="flex items-center gap-3" title="Chrome Desteği">
+                    <i class="fab fa-chrome text-4xl text-gray-600"></i> <span class="text-gray-700 font-medium">Chrome</span>
+                </div>
+                <div class="flex items-center gap-3" title="macOS Desteği">
+                    <i class="fas fa-desktop text-4xl text-gray-600"></i> <span class="text-gray-700 font-medium">Mac</span>
+                </div>
+                <div class="flex items-center gap-3" title="Kindle Fire Desteği">
+                    <i class="fab fa-amazon text-4xl text-gray-600"></i> <span class="text-gray-700 font-medium">Kindle Fire</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <main>
+    <section id="features" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Kapsamlı Ebeveyn Kontrol <span class="gradient-text">Özellikleri</span></h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">FamiSafe, çocuğunuzun dijital dünyasını güvende tutmak için ihtiyacınız olan tüm araçları sunar.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="w-14 h-14 rounded-xl gradient-bg flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Konum Takibi ve Coğrafi Çit</h3>
+                    <p class="text-gray-600">Çocuğunuzun gerçek zamanlı konumunu görüntüleyin, güvenli bölgeler oluşturun ve bu bölgelere giriş/çıkışlarda anında bildirim alın.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="w-14 h-14 rounded-xl gradient-bg flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Ekran Süresi Yönetimi</h3>
+                    <p class="text-gray-600">Cihaz kullanım süresini sınırlayın, uygulama kullanım istatistiklerini görüntüleyin ve belirli zamanlar için cihaz kilidi ayarlayın.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="w-14 h-14 rounded-xl gradient-bg flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Uygulama Engelleme</h3>
+                    <p class="text-gray-600">İstenmeyen uygulamaları engelleyin veya kullanım sürelerini sınırlayın. Özellikle oyun ve sosyal medya uygulamalarını kontrol edin.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="w-14 h-14 rounded-xl gradient-bg flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Web İçerik Filtreleme</h3>
+                    <p class="text-gray-600">Uygunsuz web sitelerini otomatik olarak engelleyin, belirli web sitelerine erişimi kısıtlayın ve güvenli arama modunu etkinleştirin.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="w-14 h-14 rounded-xl gradient-bg flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Akıllı İçerik Tespiti</h3>
+                    <p class="text-gray-600">YouTube, SMS, WhatsApp ve sosyal medyada siber zorbalık, şiddet veya uygunsuz içerik barındıran metinleri ve görselleri tespit edin.</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="w-14 h-14 rounded-xl gradient-bg flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Sürüş Güvenliği Raporu</h3>
+                    <p class="text-gray-600">Genç sürücülerin araç kullanma alışkanlıklarını izleyin, aşırı hız ve ani fren yapma gibi riskli davranışlardan haberdar olun.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              Esnek <span class="gradient-text">Seçenekler</span>
+            </h2>
+            <p class="text-gray-600 max-w-3xl mx-auto">
+              İhtiyaçlarınıza uygun seçeneği belirleyin ve hemen başlayın.
+            </p>
+          </div>
+      
+          <!-- Two options -->
+          <div class="flex flex-col md:flex-row justify-center gap-6 max-w-3xl mx-auto">
+            <!-- Individual button -->
+            <a href="https://wshare.beeneo.com/famisafe-1?Lisans-T%C3%BCr%C3%BC=Aile&Lisans=Ayl%C4%B1k" 
+               target="_blank"
+               class="w-full md:w-1/2 bg-purple-600 hover:bg-purple-700 text-white font-semibold py-4 px-8 rounded-xl text-center text-lg shadow-lg transition-colors">
+               👤 Bireysel Kullanıcı
+            </a>
+      
+            <!-- B2B WhatsApp button -->
+            <a href="https://wa.me/905512589444?text=Merhaba%2C%20kurumsal%20kullan%C4%B1m%20i%C3%A7in%20FamiSafe%20lisans%C4%B1%20hakk%C4%B1nda%20detayl%C4%B1%20bilgi%20almak%20istiyorum." 
+               target="_blank"
+               class="w-full md:w-1/2 bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-8 rounded-xl text-center text-lg shadow-lg transition-colors flex items-center justify-center gap-2">
+               <i class="fab fa-whatsapp text-2xl"></i> Kurumsal (B2B)
+            </a>
+          </div>
+        </div>
+      </section>
+      
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Ebeveynler <span class="gradient-text">FamiSafe'i Seviyor</span></h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Gerçek kullanıcılarımızın FamiSafe deneyimlerini keşfedin.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-8 rounded-2xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/100x100/EED/312_?text=AY" alt="FamiSafe kullanıcısı Ayşe Y. yorumu" loading="lazy">
+                        <div>
+                            <h3 class="font-bold text-gray-800">Ayşe Y.</h3>
+                            <div class="flex text-yellow-400"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"10 yaşındaki oğlumun ekran süresini kontrol etmekte zorlanıyordum. FamiSafe sayesinde artık hangi uygulamalarda ne kadar vakit geçirdiğini görebiliyor ve sağlıklı sınırlar koyabiliyorum."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-8 rounded-2xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                         <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/100x100/DDE/312_?text=MK" alt="FamiSafe kullanıcısı Mehmet K. yorumu" loading="lazy">
+                        <div>
+                            <h3 class="font-bold text-gray-800">Mehmet K.</h3>
+                            <div class="flex text-yellow-400"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Liseye giden kızımın sosyal medya kullanımı beni endişelendiriyordu. FamiSafe'in şüpheli metin tespit özelliği sayesinde siber zorbalık riskine karşı anında önlem alabiliyorum."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-8 rounded-2xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/100x100/DEE/312_?text=ZT" alt="FamiSafe kullanıcısı Zeynep T. yorumu" loading="lazy">
+                        <div>
+                            <h3 class="font-bold text-gray-800">Zeynep T.</h3>
+                            <div class="flex text-yellow-400"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Coğrafi çit özelliği sayesinde çocuğum okuldan çıktığında anında haberim oluyor. Onun güvende olduğunu bilmek paha biçilemez bir huzur veriyor. Kesinlikle tavsiye ederim!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Sıkça Sorulan <span class="gradient-text">Sorular</span></h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">FamiSafe hakkında merak ettiklerinizi öğrenin.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="accordion-toggle w-full flex justify-between items-center text-left p-5 font-medium text-gray-800">
+                        <span>FamiSafe nasıl çalışır?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-5 pb-5">
+                        <p class="text-gray-600">FamiSafe, ebeveynlerin cihazına ve çocuğun cihazına yüklenen iki uygulama ile çalışır. Ebeveyn uygulamasından çocuğunuzun cihaz aktivitelerini izleyebilir, sınırlamalar koyabilir ve tüm kontrolleri uzaktan yönetebilirsiniz.</p>
+                    </div>
+                </div>
+                 <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="accordion-toggle w-full flex justify-between items-center text-left p-5 font-medium text-gray-800">
+                        <span>FamiSafe'i kurmak zor mu?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-5 pb-5">
+                        <p class="text-gray-600">Hayır, FamiSafe'i kurmak oldukça kolaydır. App Store veya Google Play'den uygulamayı indirdikten sonra, adım adım kurulum sihirbazı sizi yönlendirecektir. Kurulum genellikle 5 dakikadan fazla sürmez.</p>
+                    </div>
+                </div>
+                 <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="accordion-toggle w-full flex justify-between items-center text-left p-5 font-medium text-gray-800">
+                        <span>Çocuğum uygulamayı silebilir mi?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-5 pb-5">
+                        <p class="text-gray-600">FamiSafe, çocukların uygulamayı devre dışı bırakmasını önlemek için çeşitli güvenlik önlemleri içerir. Uygulamanın kaldırılması için ebeveyn şifresi gerekir ve herhangi bir kaldırma denemesinde size anında bildirim gönderilir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- CTA Section -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4 md:px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Çocuğunuzun Dijital Güvenliğini Bugün Sağlayın</h2>
+            <p class="text-purple-100 text-xl max-w-3xl mx-auto mb-10">FamiSafe ile çocuğunuzun çevrimiçi dünyasını güvende tutun ve içiniz rahat olsun.</p>
+            
+            <a href="https://wa.me/905512589444?text=Merhaba%2C%20FamiSafe%E2%80%99in%20kurumsal%20kullan%C4%B1m%C4%B1%20i%C3%A7in%20%C3%BCcretsiz%20deneme%20s%C3%BCr%C3%BCm%C3%BCn%C3%BC%20almak%20istiyorum." 
+   target="_blank" 
+   class="bg-green-500 text-white font-bold py-4 px-10 rounded-full text-lg hover:bg-green-600 transition-colors transform hover:scale-105 inline-block">
+   <i class="fab fa-whatsapp text-2xl mr-2"></i> Ücretsiz Deneme
+</a>
+
+            
+            <p class="mt-8 text-purple-100 text-sm">3 gün ücretsiz deneme. Kredi kartı gerekmez.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-lg gradient-bg flex items-center justify-center text-white font-bold mr-2 text-lg">FS</div>
+                        <span class="text-xl font-bold">FamiSafe</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Ailenizin dijital güvenliği için en kapsamlı çözüm.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Ürün</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors">Özellikler</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white transition-colors">Fiyatlandırma</a></li>
+                        <li>
+                            <a href="https://famisafe.wondershare.com/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+                              İndir
+                            </a>
+                          </li>
+                          
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Destek</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://wa.me/905512589444" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">Yardım Merkezi</a></li>
+                        <li><a href="https://wa.me/905512589444" target="_blank" rel="noopener noreferrer"  class="text-gray-400 hover:text-white transition-colors">İletişim</a></li>
+                        
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">İletişim</h3>
+                     <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start"> <i class="fas fa-envelope mt-1 mr-3"></i> <span>info@beeneo.com</span> </li>
+                        <li class="flex items-start"> <i class="fas fa-map-marker-alt mt-1 mr-3"></i> <span>İstanbul, Türkiye</span> </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Wondershare. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled', 'py-2');
+                navbar.classList.remove('py-4');
+            } else {
+                navbar.classList.remove('nav-scrolled', 'py-2');
+                navbar.classList.add('py-4');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ accordion functionality
+        document.querySelectorAll('.accordion-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.classList.remove('rotate-180');
+                } else {
+                    document.querySelectorAll('.accordion-content').forEach(c => {
+                        c.style.maxHeight = null;
+                        c.previousElementSibling.querySelector('i').classList.remove('rotate-180');
+                    });
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
